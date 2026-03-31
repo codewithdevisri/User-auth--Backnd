@@ -1,39 +1,38 @@
-# User Authentication Frontend
+# User Authentication Backend
 
 ## 📌 Overview
 
-This is the frontend of a User Authentication System built using React.js. It allows users to register and log in through a simple and responsive user interface.
+This is the backend of a User Authentication System built using Node.js and Express.js. It handles user registration, login, and database operations.
 
 ---
 
 ## 🚀 Features
 
-* User Signup (Registration)
-* User Login
-* Form Validation
-* API Integration with Backend
-* Responsive UI
+* User Registration API
+* User Login API
+* Database Integration
+* Request Validation
+* RESTful API Design
 
 ---
 
 ## 🛠️ Tech Stack
 
-* React.js
-* HTML5
-* CSS3
+* Node.js
+* Express.js
+* MySQL / MongoDB
 * JavaScript (ES6+)
-* Axios / Fetch API
 
 ---
 
 ## 📂 Project Structure
 
 ```
-src/
- ├── components/
- ├── pages/
- ├── App.js
- ├── index.js
+├── routes/
+├── controllers/
+├── models/
+├── config/
+├── server.js
 ```
 
 ---
@@ -43,13 +42,13 @@ src/
 1. Clone the repository:
 
 ```
-git clone https://github.com/codewithdevisri/user-auth.git
+git clone https://github.com/codewithdevisri/User-auth--Backnd.git
 ```
 
 2. Navigate to project folder:
 
 ```
-cd user-auth
+cd User-auth--Backnd
 ```
 
 3. Install dependencies:
@@ -58,43 +57,52 @@ cd user-auth
 npm install
 ```
 
-4. Start the development server:
+4. Start the server:
 
 ```
-npm start
+node server.js
 ```
 
 ---
 
-## 🔗 API Integration
+## 🔌 API Endpoints
 
-Make sure your backend server is running.
+### Register User
 
-Example API endpoints:
+```
+POST /register
+```
 
-* POST /register
-* POST /login
+### Login User
 
----
-
-## 📸 Screens (Optional)
-
-* Login Page
-* Signup Page
+```
+POST /login
+```
 
 ---
 
-## 📈 Future Improvements
+## 🗄️ Database
 
-* Add JWT Authentication
-* Add Protected Routes
-* Improve UI/UX
-* Add Forgot Password Feature
+Configure your database connection in:
+
+```
+config/db.js
+```
+
+---
+
+## 🔐 Future Improvements
+
+* Password Hashing (bcrypt)
+* JWT Authentication
+* Error Handling Middleware
+* Environment Variables (.env)
 
 ---
 
 ## 👩‍💻 Author
 
-Devi Sri 
+Devi Sri
 
 ---
+
